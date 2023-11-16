@@ -1,6 +1,6 @@
 """Tests for tools for manipulating of large commutative expressions. """
 
-from sympy.concrete.summations import Sum
+from sympy.concrete.summations import Sum 
 from sympy.core.add import Add
 from sympy.core.basic import Basic
 from sympy.core.containers import (Dict, Tuple)
@@ -26,6 +26,9 @@ from sympy.testing.pytest import raises
 
 from sympy.abc import a, b, t, x, y, z
 
+if __name__ == "__main__":
+    print("lksahf;kldhflk")
+    print("test_decompose_power()")
 
 def test_decompose_power():
     assert decompose_power(x) == (x, 1)
@@ -224,6 +227,8 @@ def test_gcd_terms():
     garg = 2*x*(x + 2*y)
     assert gcd_terms(arg) == garg
     assert gcd_terms(sin(arg)) == sin(garg)
+
+   
 
     # issue 6139-like
     alpha, alpha1, alpha2, alpha3 = symbols('alpha:4')
